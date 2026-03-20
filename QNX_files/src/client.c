@@ -44,6 +44,7 @@ void receiveFromDashboard(int sockfd, int brake_coid) {
             
             MsgSend(brake_coid, &p.msg, sizeof(p.msg), NULL, 0);
 <<<<<<< HEAD
+<<<<<<< HEAD
             printf("[CLIENT] : Received data from dashboard for webots.c");
         }
 
@@ -63,6 +64,9 @@ void receiveFromDashboard(int sockfd, int brake_coid) {
         }
 =======
             printf("[CLIENT] : Received braking data from Dashboard.")
+=======
+            printf("[CLIENT] : Received braking data from Dashboard.");
+>>>>>>> c72a477 (all systems being spawned, checking in, and being cleaned up correctly)
         }
 >>>>>>> 9068e1e ( removed data not included in the telemetry the dashboard is waiting on)
         // else if (strcmp(p.msg_type, "ThrottleInput") == 0)
