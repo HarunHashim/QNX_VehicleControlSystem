@@ -32,13 +32,18 @@ void receiveFromDashboard(int sockfd, int brake_coid) {
 
         //These are the controls that the dashboard is sending 
         // route to correct process
+<<<<<<< HEAD
 
         // Data from dashboard to webot.c for sending to webots
         if (strcmp(p.msg_type, "Webots") == 0) {
+=======
+        if (strcmp(p.msg_type, "BrakingInput") == 0) {
+>>>>>>> 9068e1e ( removed data not included in the telemetry the dashboard is waiting on)
             
             //From here then on send the data to appropriate processes , braking etc 
             
             MsgSend(brake_coid, &p.msg, sizeof(p.msg), NULL, 0);
+<<<<<<< HEAD
             printf("[CLIENT] : Received data from dashboard for webots.c");
         }
 
@@ -56,6 +61,10 @@ void receiveFromDashboard(int sockfd, int brake_coid) {
             MsgSend(brake_coid, &p.msg, sizeof(p.msg), NULL, 0);
             printf("[CLIENT] : Received data from webots api  ");
         }
+=======
+            printf("[CLIENT] : Received braking data from Dashboard.")
+        }
+>>>>>>> 9068e1e ( removed data not included in the telemetry the dashboard is waiting on)
         // else if (strcmp(p.msg_type, "ThrottleInput") == 0)
         // {
             
