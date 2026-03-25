@@ -129,12 +129,15 @@ typedef struct
 typedef struct{
     float speed;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     // float throttle;
     // float brake;
     // float steering_angle;
     // int   safe_mode;    // bool
 >>>>>>> 7df01eb ( Just created this branch to work on data parser)
+=======
+>>>>>>> 898c056 ( Made the changes related to the data types . Yet to test on the pipeline to examine if it works all through)
     int   snow_mode;    // bool
     char warnings [10][64];  
     int   warning_count;
@@ -152,6 +155,7 @@ typedef struct {
 // webot sim data
 typedef struct 
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
     char* subsys  [32];         // contains name of subsystem for that data
     vehicle_controls_data data;
@@ -174,6 +178,21 @@ typedef struct
 }vehicle_controls;
 
 >>>>>>> 7df01eb ( Just created this branch to work on data parser)
+=======
+    char* subsys  [32];         // contains name of subsystem for that data
+    vehicle_controls_data data;
+}vehicle_controls;
+
+typedef struct 
+{
+    double throttle_level;    // [  0 , 1]
+    double brake_level;       // [  0 , 1]
+    double steering_level;    // [ -1 , 1]
+    char* toggleGear [2];         //[ D = 0 , R = 1]
+}vehicle_controls_data;
+
+
+>>>>>>> 898c056 ( Made the changes related to the data types . Yet to test on the pipeline to examine if it works all through)
 
 void packet_init(msg_packet *c);
 void vc_init(vehicle_controls *vc);
