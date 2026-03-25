@@ -106,16 +106,7 @@ int main(int argc, char *argv[]) {
 
                 strcpy(t.type, "VehicleTelemetry");
                 t.tel.speed          = state.speed;
-<<<<<<< HEAD
                 t.tel.snow_mode         = state.snow_mode;
-=======
-                // t.tel.throttle       = state.throttle;
-                // t.tel.brake          = state.brake;
-                // t.tel.steering_angle = state.steering_angle;
-                t.tel.safe_mode      = state.safe_mode;
-                t.tel.snow_mode      = state.snow_mode;
-                t.timestamp          = (float)time(NULL);
->>>>>>> 9068e1e ( removed data not included in the telemetry the dashboard is waiting on)
 
                 //Copying over warnings onto that 
                 
