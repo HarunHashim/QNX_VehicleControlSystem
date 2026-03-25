@@ -152,4 +152,3 @@ char* sim_data_to_json(vehicle_controls *v){
 // Will have to create a data parser for the data coming in from the webots side and going out of it 
 
 // March 24 work doen in telem last --> Harun Mwondi
-
